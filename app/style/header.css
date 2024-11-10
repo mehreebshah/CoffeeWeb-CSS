@@ -1,0 +1,50 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding-left: 1.5rem /* 24px */;
+    padding-right: 1.5rem; /* 24px */
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem; /* 8px */
+    height: 5rem;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    --tw-text-opacity: 1;
+    color: rgb(146 64 14 / var(--tw-text-opacity)) ;
+    margin-left: 1rem;
+    font-size: large;
+    margin-right: auto;
+    font-family: fantasy;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    @media (min-width: 768px) {
+        .md\:gap-6 {
+            gap: 1.5rem /* 24px */;
+        }
+    }
+}
+
+.nav-item {
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #78350f; /* Equivalent to `text-amber-900` */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Define hover states */
+.nav-item:hover {
+    transform: translateY(-0.25rem) scale(1.1); /* Equivalent to `hover:translate-y-1` and `hover:scale-110` */
+    background-color: #d97706; /* Equivalent to `hover:bg-amber-700` */
+    border-radius: 0.25rem;
+}
+
